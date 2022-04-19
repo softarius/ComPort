@@ -1,0 +1,15 @@
+[OPTIONS]
+TITLE=ComPort Library help
+CONTENTS=1OE68K5
+COPYRIGHT=ComPort Library help file version 2.63.1
+LCID=0x409 0x0 0x0
+CNT=CPort.cnt
+COMPRESS=12
+
+[WINDOWS]
+main="ComPort Library Help",(70,59,700,943),4294962436,,(192,192,192),f2
+props="Class inspector",(750,,150,),4,(255,255,226),(192,192,192),1
+
+[FILES]
+CPORT.RTF
+
