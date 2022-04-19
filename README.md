@@ -1,35 +1,28 @@
-+-------------------------------------------------+
-| ComPort Library version 4.10                    |
-| for Delphi 5, 6, 7, 2005, 2006, 2007, 2010, XE  |
-| and C++ Builder 3, 4, 5, 6                      |
-|                                                 |
-| by Dejan Crnila 1998-2002                       |
-| maintained by Lars Dybdahl and Paul Doland      |
-| maintained by Brian Gochnauer Nov 2010          |
-+-------------------------------------------------+
+# ComPort Library
+ComPort Library version 4.11                    
+for Delphi 5, 6, 7, 2005, 2006, 2007, 2010, XE, 10.3  
+and C++ Builder 3, 4, 5, 6                      
+by Dejan Crnila 1998-2002                       
 
-Contents
-1. Author information
-2. Support
-3. Files in archive
-4. Examples
-5. Package names
-6. Installing ComPort Library
-7. C++ Builder notes
-8. Installing help file
-9. Known problems and issues
+maintained by Lars Dybdahl and Paul Doland      
+
+maintained by Brian Gochnauer Nov 2010 
+
+maintained by Sergey Yushinin (aka Softarius) Apr 2022         
 
 
-1. Author information
----------------------------------------------------------------------------------
+## 1. Author information
 Name: Dejan Crnila
+
 E-mail: dejancrn@yahoo.com
+
 Year of birth: 1978
+
 Occupation: Student of computer science at University of Ljubljana
 
 
 Current maintainers
-------------------
+
 Name: Lars B. Dybdahl
 E-mail: Lars@dybdahl.dk
 Homepage: http://dybdahl.dk/lars/
@@ -42,22 +35,24 @@ E-mail: cport@pauld.ml1.net
 Brian Gochnauer
 email:brian@gochanuer.net
 
-2. Support
---------------------------------------------------------------------------------
-If you have any questions, suggestions, opinion or any other messages, please
-visit the sourceforge forums.
+Sergey Yushinin
+e-mail: yushinins@mail.ru
+
+## 2. Support
+
+If you have any questions, suggestions, opinion or any other messages, please visit bug tracker.
 
 
-3. Files in archive
---------------------------------------------------------------------------------
+## 3. Files in archive
+
   ReadMe.Txt      - this file
   Sources.zip     - ComPort Library sources
   Help.zip        - Delphi context-sensitive help file for library
   Examples.zip    - Example projects for Delphi & C++ Builder
 
 
-4. Examples
---------------------------------------------------------------------------------
+## 4. Examples
+
   ComExample.dpr,
   ComExampleCB*.bpr  - shows some basic send-recieve features
 
@@ -75,35 +70,48 @@ visit the sourceforge forums.
                        TCustomComPort descendant. 
 
 
-5. Package names
---------------------------------------------------------------------------------
-		Design-Time Source	Run-Time Source
-                ----------------	---------------
+## 5. Package names
+Design-Time Source	Run-Time Source
+
 Delphi 3	DsgnCPort3.dpk		CPortLib3.dpk
+
 Delphi 4	DsgnCPort4.dpk		CPortLib4.dpk
+
 Delphi 5	DsgnCPort5.dpk		CPortLib5.dpk
+
 Delphi 6	DsgnCPort6.dpk		CPortLib6.dpk
+
 Delphi 7	DsgnCPort7.dpk		CPortLib7.dpk
+
 Delphi 8	DsgnCPort8.dpk		CPortLib8.dpk
+
 Delphi 2005	DsgnCPortD2005.dpk	CPortLibD2005.dpk
+
 Delphi 2006	DsgnCPortD2006.dpk	CPortLibD2006.dpk
+
 Delphi 2007	DsgnCPortD2007.dpk	CPortLibD2007.dpk
+
 Delphi 2008	DsgnCPortD2008.dpk	CPortLibD2008.dpk
+
 Delphi 2009	DsgnCPortD2009.dpk	CPortLibD2009.dpk
+
 Delphi XE	DsgnCPortDXE.dpk	CPortLibDXE.dpk
+
+Delphi 10.3	DsgnCPortD2010.dpk	CPortLibD2010.dpk
+
 C++ Builder 3	DsgnCPortCB3.bpk	CPortLibCB3.bpk
+
 C++ Builder 4	DsgnCPortCB4.bpk	CPortLibCB4.bpk
+
 C++ Builder 5	DsgnCPortCB5.bpk	CPortLibCB5.bpk
+
 C++ Builder 6	DsgnCPortCB6.bpk	CPortLibCB6.bpk
 
 
 
-6. Installation
---------------------------------------------------------------------------------
-Remove all previously installed files of ComPort Library (TComPort
-component). Create a new folder under Delphi directory and extract 
-Sources zip file into new folder. Add to the Library Path the new 
-ComPort folder (Tools-Environment Options-Library-Library Path).
+## 6. Installation
+
+Remove all previously installed files of ComPort Library (TComPort component). Create a new folder under Delphi directory and extract Sources zip file into new folder. Add to the Library Path the new  ComPort folder (Tools-Environment Options-Library-Library Path).
 
 For Delphi 2006:  
 
@@ -177,8 +185,8 @@ component library. This unit registers ComPort components on
 "CPortLib" page of component pallete.
 
 
-7. C++ Builder Notes
-------------------------------------------------------------------------------
+## 7. C++ Builder Notes
+
 The .hpp file C++ Builder creates for cport.pas will have a bug in it.
 The first time you compile a project, you will get one or two duplicate 
 definitions within the EComPort exception class.  It seems to be safe to
@@ -198,8 +206,8 @@ find to the CPort Forum so that we can incorporate your findings in
 future revisions.
 
 
-8. Installing help file (not available for Delphi2005)
-------------------------------------------------------------------------------
+## 8. Installing help file (not available for Delphi2005)
+
 In Delphi/C++ Builder, go to the Help menu, customize item. You should be 
 presented with a tabbed notebook, "Contents" tab selected. Click the + (Add Files) 
 button. Browse to the CPort directory. Select CPort.toc. 
@@ -211,14 +219,12 @@ if you close the program and forget to save your changes, so you must remember
 to do so yourself. 
 
 
-9. Known problems and issues
------------------------------------------------------------------------------
+## 9. Known problems and issues
+
   1.) OnRxBuf event handler problem in Delphi IDE
 
-      If user double clicks on OnRxBuf event in Delphi IDE, message pops up
-      saying: "Property and Method ComPort1RxBuf are not compatible".
-      This is a Delphi IDE bug, since it can't handle untyped parameters
-      like Buffer parameter of OnRxBuf event.
+      If user double clicks on OnRxBuf event in Delphi IDE, message pops up saying: "Property and Method ComPort1RxBuf are not compatible".
+      This is a Delphi IDE bug, since it can't handle untyped parameters like Buffer parameter of OnRxBuf event.
 
       Solution: Application has to assign OnRxBuf handler manually in code.    
 
