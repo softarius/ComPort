@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3E1CC45A-7B99-451D-9F8D-1387D342E213}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CPortLibD2010.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DsgnCPortD2010.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CPortLibD2010">
+        <MSBuild Projects="CPortLibD2010.dproj"/>
+    </Target>
+    <Target Name="CPortLibD2010:Clean">
+        <MSBuild Projects="CPortLibD2010.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CPortLibD2010:Make">
+        <MSBuild Projects="CPortLibD2010.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DsgnCPortD2010">
+        <MSBuild Projects="DsgnCPortD2010.dproj"/>
+    </Target>
+    <Target Name="DsgnCPortD2010:Clean">
+        <MSBuild Projects="DsgnCPortD2010.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DsgnCPortD2010:Make">
+        <MSBuild Projects="DsgnCPortD2010.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CPortLibD2010;DsgnCPortD2010"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CPortLibD2010:Clean;DsgnCPortD2010:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CPortLibD2010:Make;DsgnCPortD2010:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
