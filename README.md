@@ -40,7 +40,7 @@ e-mail: yushinins@mail.ru
 
 ## 2. Support
 
-If you have any questions, suggestions, opinion or any other messages, please visit bug tracker.
+If you have any questions, suggestions, opinion or any other messages, please visit bug tracker https://github.com/softarius/ComPort/issues.
 
 
 ## 3. Files in archive
